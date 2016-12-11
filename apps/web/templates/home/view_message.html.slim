@@ -1,0 +1,74 @@
+.ui.divided.grid
+  .column.ten.wide
+    h2.ui.dividing.header
+      | Commande des stores
+      .sub.header 
+        .ui.blue.label.horizontal #2112
+        | OT no. 2016 106 915 Rez de la villa Mme. Domenge
+    .ui.comments
+      .comment
+        .content
+          a.author MK
+          .metadata 
+            .date 21.12.2013 11:30
+          .text
+            p Achtung, il y a des trucs à faire
+      .comment
+        .content
+          a.author AMG
+          .metadata 
+            .date 21.12.2013 13:30
+          .text
+            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    form.ui.reply.form
+      .field
+        textarea name='message'
+      .ui.button.primary Répondre
+  .column.six.wide
+    h2.ui.dividing.header Envoyer la commande
+    form.ui.form
+      .ui.list
+        .item 
+          .left.floated.content
+            input#f1 type='radio' name='filetosign'
+          .content 
+            label for="f1" B16-1235.pdf
+        .item 
+          .left.floated.content
+            input#f2 type='radio' name='filetosign'
+          .content 
+            label for="f2" Sarraz-8654514.pdf
+        .item 
+          .left.floated.content
+            input#f3 type='radio' name='filetosign'
+          .content 
+            label for="f3" Sarraz-8654514-grafik.pdf
+       
+      .field
+        label Livraison pour la semaine
+        select.ui.dropdown id="order_file_delivery_date" name="order_file[delivery_date]"
+          option value="2016-12-05" 16.49 ( 5 déc. -  9 déc.)
+          option value="2016-12-12" 16.50 (12 déc. - 16 déc.)
+          option value="2016-12-19" 16.51 (19 déc. - 23 déc.)
+          option value="2016-12-26" 16.52 (26 déc. - 30 déc.)
+          option value="2017-01-02" 17.01 ( 2 jan. -  6 jan.)
+          option value="2017-01-09" 17.02 ( 9 jan. - 13 jan.)
+          option value="2017-01-16" 17.03 (16 jan. - 20 jan.)
+          option value="2017-01-23" 17.04 (23 jan. - 27 jan.)
+          option value="2017-01-30" 17.05 (30 jan. -  3 fév.)
+          option value="2017-02-06" 17.06 ( 6 fév. - 10 fév.)
+          option value="2017-02-13" 17.07 (13 fév. - 17 fév.)
+          option value="2017-02-20" 17.08 (20 fév. - 24 fév.)
+          option value="2017-02-27" 17.09 (27 fév. -  3 mar.)
+          option value="2017-03-06" 17.10 ( 6 mar. - 10 mar.)
+          option value="2017-03-13" 17.11 (13 mar. - 17 mar.)
+      .field
+        label Signer en tant que
+        select.ui.dropdown name="signator"
+          option value="mk" Mickael Kurmann
+          option value="oz" Olivier Zbinden
+
+      .ui.button.primary Signer le fichier selectionné et envoyer 
