@@ -1,0 +1,4 @@
+project=ppl_commander
+architecture=container
+test=rspec
+template=slim
