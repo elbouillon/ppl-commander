@@ -4,9 +4,10 @@ html
     title
       | PPL Commander
   body
-    .ui.container
-      h1.ui.header
-        a href="/" PPl Commander
-        .sub.header Tu signes ou tu t'en vas
+    #header.ui.vertical.header.segment.inverted.green
+      h1.ui.center.aligned.header.inverted
+        i.icon.file.text.outline
+        | PPL Commander
+    #main.ui.container
       = yield
     script type="text/javascript" src="/assets/bundle.js" charset="utf-8"

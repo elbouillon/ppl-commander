@@ -1,30 +1,32 @@
 .ui.grid.divided
   .column.twelve.wide
-    .ui.header Inbox
+    h1.ui.header Commandes
+    .ui.pointing.menu
+      a.item.active href="/" 
+        | A traiter
+        .ui.floating.circular.label 2
+      a.item href="#"
+        | En attente de réponse
+        .ui.floating.circular.label 4
+      a.item.floated.right href="/orders/done"
+        | Terminées
+        .ui.floating.circular.label 4402
+
     table.ui.files.single.line.unstackable.selectable.table.compact
       tbody
         tr
           td.single.line
-            i.icon.share.small
+            .ui.label.circular.horizontal.green.empty
             a href="/view/message/122" Commande des stores 
             small
               b #2112 
               span.mute OT no. 2016 106 915 Rez de la villa Mme. Domenge
           td.right.aligned 21:30
-          td.right.aligned
-            .ui.buttons.mini
-              .ui.icon.button
-                i.icon.reply
         tr
           td.single.line
-            i.icon.red.announcement
-            .ui.blue.horizontal.label.tiny #1022
+            .ui.label.circular.horizontal.orange.empty
             a href='/view/message/122' Réponse de commande urgente
           td.right.aligned 21.01.2015
-          td.right.aligned
-            .ui.buttons.mini
-              .ui.icon.button
-                i.icon.reply
 
     .ui.divider
 
@@ -37,7 +39,11 @@
           option value='2259' W#2259  Bâtiment B - 0697 Route Suisse 125 1290 Versoix
       .field
         label Titre commande
-        input type='text' name='sujet' placeholder='Cylindres PZ 92'
+        .ui.right.labeled.input
+          input type='text' name='sujet' placeholder='Cylindres PZ 92'
+          .ui.label.orange
+            input#checkbox type='checkbox' 
+            label for="checkbox"  Urgent ?
       .field
         label Corps / message
         textarea name='message' placeholder='Merci de mettre en commande 2x 60-50BTN PZ, détails dans le PDF joint'
