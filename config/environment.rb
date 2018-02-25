@@ -1,18 +1,18 @@
 require 'bundler/setup'
 require 'hanami/setup'
-require 'hanami/model'
+# require 'hanami/model'
 require_relative '../lib/ppl_commander'
 require_relative '../apps/web/application'
 
 Hanami.configure do
   mount Web::Application, at: '/'
 
-  model do
-    adapter :sql, ENV['DATABASE_URL']
-    # Migrations
-    migrations 'db/migrations'
-    schema     'db/schema.sql'
-  end
+  # model do
+  #   adapter :sql, ENV['DATABASE_URL']
+  #   # Migrations
+  #   migrations 'db/migrations'
+  #   schema     'db/schema.sql'
+  # end
 
   mailer do
     root 'lib/ppl_commander/mailers'
